@@ -5,16 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js",
-    "start": "serve -s build"
+    "dev": "nodemon server.js"
+   
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
-    "mongodb": "^4.3.1",
-    "serve": "^13.0.2"
+    "mongodb": "^4.3.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
