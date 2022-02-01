@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser= require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 const app = express()
+const port =process.env.port || 5000;
 
 
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -14,6 +15,6 @@ app.get('/', (req, res) => {
   })
   
 
-app.listen(3000, function() {
-    console.log('listening on 3000')
+app.listen(port,()=> {
+    console.log('listening on 5000')
   })
